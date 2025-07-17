@@ -1,0 +1,46 @@
+# Minimal requirements for Wonder3D + DreamGaussian 2D-to-3D pipeline (inference/mesh export only)
+numpy
+scipy
+matplotlib
+Pillow
+opencv-python
+tqdm
+PyYAML
+requests
+
+# PyTorch ecosystem
+# (torch/torchvision version should match your CUDA version; see Dockerfile)
+torch
+torchvision
+
+diffusers[torch]
+xformers
+bitsandbytes
+einops
+ftfy
+piq
+
+# 3D and mesh processing
+trimesh
+xatlas
+PyMCubes
+plyfile
+pygltflib
+pyransac3d
+
+# Neural rendering and NeRF
+nerfacc
+torch_efficient_distloss
+
+# Image and video processing
+imageio
+imageio-ffmpeg
+# rembg  # Uncomment if you need background removal
+# segment_anything  # Uncomment if you need segmentation
+
+# Configuration and utilities
+omegaconf
+pyhocon
+icecream
+rich
+ninja
